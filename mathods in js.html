@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            methods in js
+        </title>
+    </head>
+    <body>
+        <h2>JS array methods</h2>
+        <h2>Join() and pop()</h2>
+        <p id="myJoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+        <script>
+            var fruit = ["apple","banana","orange","watermelon"]
+            document.getElementById("myJoin").innerHTML = fruit.join("*")
+            document.getElementById("myfirstpop").innerHTML = fruit;
+            fruit.pop();
+            document.getElementById("mysecondpop").innerHTML = fruit;
+            fruit.pop();
+           </script>
+    </body>
+</html>
