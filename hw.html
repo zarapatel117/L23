@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easy JS Methods</title>
+</head>
+<body>
+    <h2>Object and Array in JS</h2>
+
+    <p id="objectData"></p>
+    <p id="arrayJoin"></p>
+    <p id="popOne"></p>
+    <p id="popTwo"></p>
+
+    <script>
+        
+        var student = {
+            name: "Aayesha",
+            age: 40,
+            subject: "JavaScript"
+        };
+
+        document.getElementById("objectData").innerHTML = 
+            "Name: " + student.name + "<br>" +
+            "Age: " + student.age + "<br>" +
+            "Subject: " + student.subject;
+
+        var fruits = ["apple", "banana", "orange", "watermelon"];
+        document.getElementById("arrayJoin").innerHTML = "Fruits: " + fruits.join(" * ");
+
+        fruits.pop();
+        document.getElementById("popOne").innerHTML = "After 1st pop: " + fruits;
+
+        fruits.pop();
+        document.getElementById("popTwo").innerHTML = "After 2nd pop: " + fruits;
+    </script>
+</body>
+</html>
